@@ -2,6 +2,7 @@ package com.domain.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,8 +19,10 @@ public class Product implements Serializable {
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private Long id;
     
+    @Column (name="prodduct_name", length=100)
     private String name;
 
+    @Column 
     private String description;
 
     private double price;
