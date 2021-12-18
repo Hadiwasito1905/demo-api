@@ -1,4 +1,4 @@
-package com.domain.entities;
+package com.domain.models.entities;
 
 import java.io.Serializable;
 
@@ -22,7 +22,7 @@ public class Product implements Serializable {
     @Column (name="prodduct_name", length=100)
     private String name;
 
-    @Column 
+    @Column(name = "product_description", length = 1000) 
     private String description;
 
     private double price;
