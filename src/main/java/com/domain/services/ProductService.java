@@ -34,8 +34,8 @@ public class ProductService {
         productRepo.deleteById(id);;
     }
 
-    public List<Product> findByName(String name, int List){
-        return List<List> productRepo.findByNameContains(name);
+    public List<Product> findByName(String name){
+        return productRepo.findByNameContains(name);
     }
          
 }
